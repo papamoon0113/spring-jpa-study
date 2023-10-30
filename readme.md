@@ -9,8 +9,13 @@ Spring JPA를 공부하기 위한 개인 프로젝트
 #### **1️⃣ Git clone**
 
 ```powershell
+<<<<<<< HEAD
 git clone <https://github.com/papamoon0113/sugar-road.git>
 cd sugar-road
+=======
+git clone https://github.com/papamoon0113/spring-jpa-study.git
+cd spring-jpa-study
+>>>>>>> 04bb78d (study spring data jpa and spring boot test)
 ```
 
 #### **2️⃣ Create table in MySQL**
