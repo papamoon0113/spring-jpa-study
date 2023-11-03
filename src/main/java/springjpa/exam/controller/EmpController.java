@@ -7,10 +7,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-<<<<<<< HEAD
-=======
 import org.springframework.web.bind.annotation.ResponseBody;
->>>>>>> 04bb78d (study spring data jpa and spring boot test)
 import org.springframework.web.servlet.ModelAndView;
 
 import lombok.RequiredArgsConstructor;
@@ -22,21 +19,11 @@ import springjpa.exam.repository.EmpRepository;
 public class EmpController {
 	
 	private final EmpRepository dao;
-	
-<<<<<<< HEAD
-	@GetMapping("/countnum") // 수정
-	public ModelAndView count() {
-		ModelAndView mav = new ModelAndView();
-		long num = dao.count();
-		mav.addObject("num", num);
-		mav.setViewName("empResult");
-		return mav;
-=======
+
 	@GetMapping("/countnum")
 	@ResponseBody
 	public long count() {
 		return dao.count();
->>>>>>> 04bb78d (study spring data jpa and spring boot test)
 	}
 	
 	@GetMapping("/list")
